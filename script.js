@@ -3,6 +3,31 @@ function getComputerChoice() {
     let values = ['rock', 'paper', 'scissors'];
     return values[v];
 }
+
+let a = document.querySelector('#rock');
+let b = document.querySelector('#paper');
+let c = document.querySelector('#scissors');
+
+let d = document.querySelector('div');
+
+a.addEventListener('click', function() {
+    const cpt = getComputerChoice();
+    d.innerHTML = playRound('rock', cpt);
+})
+b.addEventListener('click', function() {
+    const cpt2 = getComputerChoice();
+    d.innerHTML = playRound('paper', cpt2);
+})
+c.addEventListener('click', function() {
+    const cpt3 = getComputerChoice();
+    d.innerHTML = playRound('scissors', cpt3);
+})
+
+
+
+
+
+
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === computerSelection) {
         return 'Its a tie';
