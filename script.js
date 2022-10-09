@@ -58,6 +58,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const playerSelection = prompt('Enter rock, paper, or scissors');
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+//const playerSelection = prompt('Enter rock, paper, or scissors');
+//const computerSelection = getComputerChoice();
+//console.log(playRound(playerSelection, computerSelection));
