@@ -8,7 +8,7 @@ let a = document.querySelector('#rock');
 let b = document.querySelector('#paper');
 let c = document.querySelector('#scissors');
 
-let d = document.querySelector('div');
+let d = document.querySelector('#result');
 
 a.addEventListener('click', function() {
     const cpt = getComputerChoice();
